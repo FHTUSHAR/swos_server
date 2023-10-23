@@ -4,9 +4,9 @@ const adminModel = require('../model/admin.model')
 exports.postAdmin = async (req, res) => {
     try {
         const data = {
-            name: 'admin1',
-            role: 'director1',
-            password: 'admin1'
+            name: 'admin',
+            role: 'director',
+            password: 'admin'
         }
         const admin = await mongoose.model('Admin', adminModel)
 

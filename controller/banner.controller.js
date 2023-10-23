@@ -14,7 +14,7 @@ exports.postBanner = async (req, res) => {
             image: img,
             date
         }
-        console.log('banner', bannerdata)
+
 
         // Send a response to the client
         const program = mongoose.model('Banner', BannerModel);

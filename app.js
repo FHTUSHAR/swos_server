@@ -19,7 +19,8 @@ app.use(cors())
 
 
 async function run() {
-    await mongoose.connect('mongodb://localhost:27017/swos_info', { useNewUrlParser: true, useUnifiedTopology: true });
+    // await mongoose.connect('mongodb://localhost:27017/swos_info', { useNewUrlParser: true, useUnifiedTopology: true });
+    await mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.radyzyk.mongodb.net/`, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 }
